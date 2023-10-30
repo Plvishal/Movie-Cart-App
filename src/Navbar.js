@@ -7,12 +7,9 @@ class Navbar extends React.Component {
         <div>
           <div>Title</div>
           <div>
-            <div>
-              <img src="" alt="CartIcon" />
-            </div>
-            <div>
-              <span>0</span>
-            </div>
+            <img src="" alt="CartIcon" />
+
+            <span>0</span>
           </div>
         </div>
       </>
