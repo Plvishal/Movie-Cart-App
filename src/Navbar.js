@@ -4,7 +4,15 @@ class Navbar extends React.Component {
   render() {
     return (
       <>
-        <div>
+        <div
+          style={{
+            width: '100%',
+            height: '70px',
+            background: 'red',
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+        >
           <div>Title</div>
           <div>
             <img src="" alt="CartIcon" />
