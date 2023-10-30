@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Nav = styled.div`
   width: 100%;
   height: 70px;
-  background-color: red;
+  background: linear-gradient(to right,#8a2387, #e94057, #f27121);
   display: flex;
   justify-content: space-between;
   align-items: center;
