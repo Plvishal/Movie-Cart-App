@@ -1,57 +1,70 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Nav = styled.div`
+  width: 100%;
+  height: 70px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+const CartImg = styled.img`
+  height: 48px;
+  margin-right: 20px;
+`;
+const Title = styled.div`
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-left: 15px;
+`;
+const CartContainer = styled.div`
+  position: relative;
+  cursor: pointer;
+`;
+const CartCount = styled.span`
+  background-color: orange;
+  border-radius: 50%;
+  padding: 4px 8px;
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  font-size: 12px;
+`;
 
 class Navbar extends React.Component {
   render() {
     return (
       <>
-        <div style={styles.nav}>
-          <div style={styles.title}>Movie -App</div>
-          <div style={styles.cartContainer}>
-            <img
+        <Nav>
+          <Title>Movie-App</Title>
+          <CartContainer>
+            <CartImg
+              alt=""
               src="https://cdn-icons-png.flaticon.com/128/891/891462.png"
-              alt="CartIcon"
-              style={styles.cartIcon}
-            />
+            ></CartImg>
 
-            <span style={styles.cartCount}>0</span>
-          </div>
-        </div>
+            <CartCount>0</CartCount>
+          </CartContainer>
+        </Nav>
       </>
     );
   }
 }
 
 export default Navbar;
-const styles = {
-  nav: {
-    width: '100%',
-    height: '70px',
-    background: '#dc2430',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  title: {
-    color: 'white',
-    fontSize: '30px',
-    textTransform: 'uppercase',
-    marginLeft:'15px'
-  },
-  cartContainer: {
-    position: 'relative',
-    cursor: 'pointer',
-  },
-  cartIcon: {
-    height: '48px',
-    marginRight: '20px',
-  },
-  cartCount: {
-    background: 'orange',
-    borderRadius: '50%',
-    padding: '4px 8px',
-    position: 'absolute',
-    right: '10px',
-    top: '-5px',
-    fontSize: '12px',
-  },
-};
+// const styles = {
+//   title: {
+//
+//   },
+//   cartContainer: {
+//
+//   },
+//   cartIcon: {
+//
+//   },
+//   cartCount: {
+//
+//   },
+// };
